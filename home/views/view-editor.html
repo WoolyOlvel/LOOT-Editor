@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-topbar="dark" data-sidebar-size="lg" data-sidebar="light"
+    data-sidebar-image="none" data-preloader="disable">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Online Editor | LOOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/logoicon.png">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .editor-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 85px;
+            height: calc(100vh - 85px);
+        }
+
+        .editor-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .line-numbers {
+            background-color: #2e3136;
+            color: #9aa2b1;
+            font-family: monospace;
+            text-align: right;
+            width: 50px;
+            padding: 10px;
+            margin: 0;
+            overflow-y: hidden;
+            user-select: none;
+        }
+
+        .code-editor {
+            flex: 1;
+            background-color: #1e1e1e;
+            color: white;
+            font-family: monospace;
+            padding: 10px;
+            border: none;
+            outline: none;
+            overflow-y: auto;
+            white-space: pre;
+            caret-color: white;
+            margin: 0;
+        }
+
+        .code-line {
+            min-height: 1.2em;
+            position: relative;
+        }
+
+        .inactive-line {
+            pointer-events: none;
+            opacity: 0.7;
+            background-color: #1a1a1a;
+        }
+
+        .terminal {
+            position: relative;
+            height: 150px;
+            background-color: #111;
+            color: white;
+            font-family: monospace;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            background-color: #1a1a1a;
+            border-bottom: 1px solid #333;
+        }
+
+        .terminal-prompt {
+            color: #0f0;
+            user-select: none;
+        }
+
+        .terminal-content {
+            margin-top: 5px;
+            white-space: pre-wrap;
+        }
+
+        .clear-terminal {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .clear-terminal:hover {
+            color: #fff;
+        }
+
+        .terminal-default-prompt {
+            color: #0f0;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-wrapper landing">
+        <nav class="navbar navbar-expand-lg navbar-landing fixed-top job-navbar" style="background-color: #212529;" id="navbar">
+            <div class="container-fluid custom-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../../assets/images/logo1dark.png" class="card-logo card-logo-dark" alt="logo dark" height="65">
+                </a>
+                <div class="">
+                    <a href="#" class="btn btn-soft-dark"><i class="mdi mdi-cloud-download-outline align-bottom me-1"></i>  Descargar Código</a>
+                    <a href="#" class="btn btn-soft-dark"><i class="mdi mdi-play-circle-outline align-bottom me-1"></i>  Ejecutar</a>
+                </div>
+                
+                
+            </div>
+            
+        </nav>
+
+        <div class="editor-wrapper">
+            <div class="editor-container">
+                <div class="line-numbers" id="line-numbers">1</div>
+                <div class="code-editor" id="code-editor" contenteditable="true" 
+                    onkeydown="handleKeyDown(event);" 
+                    oninput="handleInput();"
+                    onpaste="handlePaste(event);"
+                    onclick="handleClick(event);"
+                    onscroll="syncScroll();">
+                    <div class="code-line active-line"></div>
+                </div>
+            </div>
+            <div class="terminal" id="terminal">
+                <button class="clear-terminal" onclick="clearTerminal()">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+                <div class="terminal-default-prompt">PS: LOOT-Editor/home/views/view-editor> </div>
+                <div class="terminal-content" id="terminal-content"></div>
+            </div>
+        </div>
+    </div> 
+
+    <script src="../recursos/terminal.js"></script> 
+    <script src="../recursos/interprete.js"></script>
+    <script src="../recursos/ejecutor.js"></script> 
+
+</body>
+</html>

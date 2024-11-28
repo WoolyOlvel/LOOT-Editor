@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-topbar="dark" data-sidebar-size="lg" data-sidebar="light" data-sidebar-image="none" data-preloader="disable">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>LOOT | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/logoicon.png">
+
+        <!--Swiper slider css-->
+        <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Layout config Js -->
+        <script src="assets/js/layout.js"></script>
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <!-- custom Css-->
+        <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+        <!-- Begin page -->
+        <div class="layout-wrapper landing">
+            <nav class="navbar navbar-expand-lg navbar-landing fixed-top job-navbar" id="navbar">
+                <div class="container-fluid custom-container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo3.png" class="card-logo card-logo-dark" alt="logo dark" height="100">
+                        <img src="assets/images/logo3.png" class="card-logo card-logo-light" alt="logo light" height="10">
+                    </a>
+                    <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold fs-15 active" href="#Inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold fs-15" href="#Funciones">Funciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold fs-15" href="#Operaciones">Operaciones</a>
+                            </li>
+                            <li class="nav-item">
+                               <!--  <a class="nav-link fw-semibold fs-15" href="#findJob">Find Jobs</a> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold fs-15" href="#Creadores">Creadores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold fs-15" href="#blog">Noticias</a>
+                            </li>
+                        </ul>
+
+                        <!-- <div class="">
+                            <a href="auth-signin-basic.html" class="btn btn-soft-primary"><i class="ri-user-3-line align-bottom me-1"></i> Login & Register</a>
+                        </div> -->
+                    </div>
+
+                </div>
+            </nav>
+            <!-- end navbar -->
+
+            <!-- start hero section -->
+            <section class="section job-hero-section bg-light pb-0" id="Inicio">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6">
+                            <div>
+                                <h1 class="display-6 fw-bold text-capitalize mb-3 lh-base">Lenguaje Orientado a Operaciones Textuales (LOOT)</h1>
+                                <p class="lead text-muted lh-base mb-4">Lenguaje de programación diseñado específicamente para la manipulación eficiente de texto. 
+                                    Su objetivo principal es facilitar la escritura de programas que realizan diversas operaciones sobre cadenas de texto.  </p>
+                                <form action="#" class="job-panel-filter">
+                                    <div class="row g-md-0 g-2">
+                                        
+                                        <!--end col-->
+                                        <div class="col-md-4">
+                                            <div class="h-100">
+                                                <button class="btn btn-dark submit-btn w-100 h-100" type="button" 
+                                                onclick="location.href='home/views/view-editor.html'">
+                                                <img 
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgUlEQVR4nM3VsUuWURTHcd8hDdJXt6h/IXMs/CeExggiShwizZwbnAwHRcQk00Voq5DI5iBUdHN1FiG0KXTR4SPXjvD4yIvP63uHDlye+xzOc7733Ps7z21r+x8ML7CD43iOoJYTMIlN9ONWPLeSPxegD7u4jS84xOd4T/77OSBjWMAgvqMLq3ge/jc5IK+xiPE0wnc2x1I6mxyQXuxhtgSZDf+9liGRdCZUVYQcYzoLIJLWsFyCLGeVcCFxEfIJw9m2qwHkT9qukHFS21FI/GZOyETM35WkvRPA1EsdrUBeYbTQR6OFmAu91ChZB77GalbQXYY0MrxM48r46OS0ijo+xD+rXgVStKsgz6LkWoz32MBUTkg7fmG+AJrDSTZIsji4tajiHJQqeXoWUMEqbW/cGz/x8TqdreoZFiqaaxaECbytGpxA682C/FPok2ZWVQ9QuqRuVIh/iAP0VIbEh53RnNt4jDvlynAXQ9jHo6YApUQD+IbfLttf/MCDawNatVP5ap8I057mnAAAAABJRU5ErkJggg==" alt="nui2">
+                                                  ¡Probar Ahora!</button>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+                                </form>
+
+                                <ul class="treding-keywords list-inline mb-0 mt-3 fs-13">
+                                    <li class="list-inline-item text-danger fw-semibold"><i class="mdi mdi-tag-multiple-outline align-middle"></i> Basado En: </li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)">Python,</a></li>
+                                    <!-- <li class="list-inline-item"><a href="javascript:void(0)">Development,</a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)">Manager,</a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)">Senior</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end col-->
+                        <div class="col-lg-4">
+                            <div class="position-relative home-img text-center mt-5 mt-lg-0">
+                                <div class="card p-3 rounded shadow-lg inquiry-box">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm flex-shrink-0 me-3">
+                                            <div class="avatar-title bg-warning-subtle text-warning rounded fs-18">
+                                                <img src="data:image/png;base64,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" alt="idea">
+                                            </div>
+                                        </div>
+                                        <h5 class="fs-15 lh-base mb-0">¡Fácil de aprender!</h5>
+                                    </div>
+                                </div>
+
+                                <div class="card p-3 rounded shadow-lg application-box">
+                                    <h5 class="fs-15 lh-base mb-3">¡Muchos lo usan!</h5>
+                                    <div class="avatar-group">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Wilbert Edward">
+                                            <div class="avatar-xs">
+                                                <img src="assets/images/465602911_4003810059865938_4247946184145009961_n.jpg" alt="" class="rounded-circle img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Victor Colli">
+                                            <div class="avatar-xs">
+                                                <div class="avatar-title rounded-circle bg-danger">
+                                                    <img src="assets/images/vc.jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Luis Cahun">
+                                            <div class="avatar-xs">
+                                                <img src="assets/images/456242707_1697845044315832_2710660298612582217_n.jpg" alt="" class="rounded-circle img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Jacob Uc">
+                                            <div class="avatar-xs">
+                                                <div class="avatar-title rounded-circle bg-success">
+                                                    <img src="assets/images/462266136_122177090492220586_99746256126584963_n.jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Jesus Yeh">
+                                            <div class="avatar-xs">
+                                                <img src="assets/images/hy.png" alt="" class="rounded-circle img-fluid">
+                                            </div>
+                                        </a>
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Más de dos mil usuarios">
+                                            <div class="avatar-xs">
+                                                <div class="avatar-title fs-13 rounded-circle bg-light border-dashed border text-primary">
+                                                    2k+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/job-profile2.png" alt="" class="user-img">
+
+                                <div class="circle-effect">
+                                    <div class="circle"></div>
+                                    <div class="circle2"></div>
+                                    <div class="circle3"></div>
+                                    <div class="circle4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end hero section -->
+
+            <section class="section" id="Funciones">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center mb-5">
+                                <h1 class="mb-3 fw-semibold lh-base">Objetivos y Funcionalidades de <span class="text-primary">LOOT</span> </h1>
+                                <p class="text-muted">Su objetivo principal es facilitar la escritura de programas que realizan diversas operaciones sobre cadenas de texto. 
+                                    Algunas de las funcionalidades que ofrece incluyen:</p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!--end row-->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body p-4">
+                                    <h1 class="fw-bold display-5 ff-secondary mb-4 text-success position-relative">
+                                        <div class="job-icon-effect"></div>
+                                        <span>1</span>
+                                    </h1>
+                                    <h6 class="fs-17 mb-2">Conteo</h6>
+                                    <p class="text-muted mb-0 fs-15">De palabras en un texto.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none">
+                                <div class="card-body p-4">
+                                    <h1 class="fw-bold display-5 ff-secondary mb-4 text-success position-relative">
+                                        <div class="job-icon-effect"></div>
+                                        <span>2</span>
+                                    </h1>
+                                    <h6 class="fs-17 mb-2">Eliminación</h6>
+                                    <p class="text-muted mb-0 fs-15">De espacios en blanco</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none">
+                                <div class="card-body p-4">
+                                    <h1 class="fw-bold display-5 ff-secondary mb-4 text-success position-relative">
+                                        <div class="job-icon-effect"></div>
+                                        <span>3</span>
+                                    </h1>
+
+                                    <h6 class="fs-17 mb-2">Tokenización</h6>
+                                    <p class="text-muted mb-0 fs-15">De texto.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none">
+                                <div class="card-body p-4">
+                                    <h1 class="fw-bold display-5 ff-secondary mb-4 text-success position-relative">
+                                        <div class="job-icon-effect"></div>
+                                        <span>4</span>
+                                    </h1>
+                                    <h6 class="fs-17 mb-2">Remoción y Extracción</h6>
+                                    <p class="text-muted mb-0 fs-15">De caracteres especiales y números.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end container-->
+            </section>
+
+            <!-- start features -->
+            <section class="section">
+                <div class="container">
+                    <div class="row align-items-center justify-content-lg-between justify-content-center gy-4">
+                        <div class="col-lg-5 col-sm-7">
+                            <div class="about-img-section mb-5 mb-lg-0 text-center">
+                                <div class="card rounded shadow-lg inquiry-box d-none d-lg-block">
+                                    <div class="card-body d-flex align-items-center">
+                                        <div class="avatar-sm flex-shrink-0 me-3">
+                                            <div class="avatar-title bg-secondary-subtle text-secondary rounded-circle fs-18">
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPklEQVR4nO3UPUoDURiF4Se6AwtXoI0Y8KcQ0rgFsVDBRi3ERiyD2KRTtyCCiNi4BQs7EdEVKNqI4k9lo13kwhVDmGTmJgEtPHCLgW/m5Zzz3eFHG6j34Kxro1o83aiW941/SNdxFSm61i0kVbU/C6n/dlxjWEMVyxjpJaSCK9xiDzs4wh3esZ0KyYrnBbMoNc32YQ6PWOjUSQVPGMpxOhznJjuBXEYHM7GHrPOt4OiiKKQxphsM4rPNpjVGd4/RFCcrseQUHWIpBbKVtzUZCvObRSCNURzE0qsFOgnax2qKk/F4DwbwUaCTUpwvp0CCruPWFFHSdjVqAg/xHhS5J1OtIKc5mZ/jDfPob3q/FB0EwCumsyDl+B8qcs5i5sfYjSWH5xBRcBAAz61AKQp/3cXoMGxRc8k9A+UpAE6+AHw+l7vZR0xfAAAAAElFTkSuQmCC" alt="fine-print--v1">
+                                            </div>
+                                        </div>
+                                        <h5 class="fs-15 lh-base mb-0">Opera y <span class="text-secondary fw-semibold">Analiza Texto</span> en Minutos</h5>
+                                    </div>
+                                </div>
+
+                                <div class="card feedback-box">
+                                    <div class="card-body d-flex shadow-lg">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/hy.png" alt="" class="avatar-sm rounded-circle">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="fs-14 lh-base mb-0">Jesus Eduardo</h5>
+                                            <p class="text-muted fs-11 mb-1">Desarollador Python</p>
+
+                                            <div class="text-warning">
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-s-fill"></i>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about.jpg" alt="" class="img-fluid mx-auto rounded-3" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-muted">
+                                <h1 class="mb-3 lh-base">Simplifica el Procesamiento de Texto con <span class="text-primary">LOOT</span> y su Potente Sintaxis</h1>
+                                <p class="ff-secondary fs-16 mb-2">Con una sintaxis clara y herramientas integradas, LOOT se posiciona como una solución eficiente para el procesamiento de texto. Al eliminar la complejidad técnica, LOOT ofrece un entorno intuitivo que acelera el desarrollo de tareas comunes, como la manipulación y análisis de cadenas de texto. </p>
+                                <p class="ff-secondary fs-16">Esto lo convierte en una herramienta ideal tanto para principiantes como para expertos.</p>
+
+                                <div class="vstack gap-2 mb-4 pb-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 me-2">
+                                            <div class="avatar-xs icon-effect">
+                                                <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                    <i class="ri-check-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0">Procesamiento rápido y eficiente de texto.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 me-2">
+                                            <div class="avatar-xs icon-effect">
+                                                <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                    <i class="ri-check-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0">Sintaxis sencilla para facilitar su adopción.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 me-2">
+                                            <div class="avatar-xs icon-effect">
+                                                <div class="avatar-title bg-transparent text-success rounded-circle h2">
+                                                    <i class="ri-check-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0">Herramientas integradas para análisis y manipulación avanzada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="home/views/view-editor.html" class="btn btn-primary">Prueba Ahora LOOT <i class="ri-arrow-right-line align-bottom ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end features -->
+
+            <!-- start services -->
+            <section class="section bg-light" id="Operaciones">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="text-center mb-5">
+                                <h1 class="mb-3 fw-semibold text-capitalize lh-base">
+                                    Palabras Reservadas en <span class="text-primary">Operaciones de LOOT </span> </h1>
+                                <p class="text-muted">En LOOT, existen palabras reservadas que definen operaciones clave para el procesamiento de texto. Estas palabras indican acciones específicas,
+                                     como dividir un texto, eliminar espacios en blanco, tokenizar o extraer números.</p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm position-relative mb-4 mx-auto">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABxElEQVR4nO1awY6CMBDlxMmDX6AJUjZpsldP+w2bPciRFv7Ay/6HH+C/YGj17MHDfsb+wW4GLDsqJiDIapmXvMTAtDPPaTuD6DgEAuEmBCp6CzL5AfRUNHH+CZ6KJiYOiKnxBEzLDdPy58j4LlHWiyNGcWxqDwTVuQglvs0EvhJfR2EleRqO/pyJ9fl9oL8VC2MDn6tsYKyx4Wk4upij8F0IKWLa1MoMpBB9A1c5TeW4DFKLfZWNr+SytFFyWWmjxd7YTFM5ruMbYhyOEE9FE1iXJyktlk6MyQ+ha8bMtHg/v5/PkSW8FJIlvMoGxhobfgjdS5vcN17icaPD5+k3uwEJ6RiMMoLOdDhFgHhj9w1+CN0yDlS7CE8LpsUaihUQn/UYcN3YtGUdHwy1M53WkbMTpS3r+LhPHbFGiIefFVryWtvBqI7Y1qL4W7GA1jsn6mJPnOzEnGm56oQ7Ma+MI0t4GQd6UOsUfWz2XvAUQnxblhazZbOzIQnxGhTEl138+rBCWLPNviIhulVGum3jmZaft2Rk1raNJzwauC0/PrAh1ZE+wEiILRnxbHmtENjyoiewRoiy5GWoNZvduj8MEAgEB/AL9Y2OnMZ9xXEAAAAASUVORK5CYII=" alt="remove-borders">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Dividir</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Operación de dividir el texto en palabras</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm position-relative mb-4 mx-auto">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4UlEQVR4nO1ZS2sUQRCegy9Q4iMEfG8wXdlNDl68G/Q/5OI6VdmNbrx4EjwF9PdIHjfBF0u2apMsxssSjCZqwHuIxsdVqd7ZMJPZuNkgO70wHxQs3dO99c1XXVPd7XkpUqQ4MIYWJq4A44xh3AGhPy6aYdwxQnNZKWb3JWEYt5J2FA5OaMss5y/HiKgSSTsHHRs+ixFxOZxgP2P6HlckaacOaV5KRJJXAVJFpAcV8XoEkBJxDJAq4hggVcQxQKqIY4BUEccAqSKOAVJFHAO4qsi1ldJpI/RAz6yM0Bdg/GWEfhrBz0ZwFphKZjnf5yyR0dXxY8D0FBi/td9I4TYwTt9YKR11ishgtZgBwXchR18OC97TU8TrL+6eVBuuUg6E7huhV83nDNNbZ4hkl2jQMG5ax4Q+QhVvthtjKv4YCK47s9W14RQoYZgWrvKdswceuzh5zjBWdtV5/vB4YkSM4JOmEp2QCJMBpg3rM+O0lwQRzU520er/hcJJD6SN4LypFAb2jtE22xc6tB4SvBW8jB/hbNY1Irpwmws74qzgfCPUsB4mY0kw1htO43xkDOPrQJWp7hMJTv0N02TEqbDDjGuZMp2PttF7bYvORaWAyEyMSLes1UWNiZKpR363CLkgNWv/ZmJERsvjp1opZkJk9lOiCZ2joQj97gEiaMOs5bPL+b7YPUkvhhYs+SNB/4fEiGj2+ieJSmGgVVuECOOU7ROcTezqTWun/5B+3zRCy6fQRDTXbVW0djrsB3G4OnG7MQ9uZ8p0ZvdhjdnuX0/jupYbXofI1fx+YPoUKPs49oAy1itfzQJdU4Wx0gmZXM3vN0LcGEu1TJlOeEkCFvGSLd9tjNOG1k5eG9hwCpQAwa9ZKV70XEBuIX8hvLEyWjtp2bHkj+h3Rs1UCqOanXYXdqCEMySaGCuPHQGmR1rFQvs1ta1rIrYHcQn27Qvl7UGD0KquU1uiM67ZjMo+RbLTHvwFnk2F4J3Q1uwAAAAASUVORK5CYII=" alt="delete-slide">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Delete</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Operación de eliminar los espacios en blanco</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm mb-4 mx-auto position-relative">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,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" alt="available-updates">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Retorna</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Indica la función para devolver el texto modificado</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm position-relative mb-4 mx-auto">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEa0lEQVR4nO1YS4hcRRR9iX/F+AE/kZjB7qqeYQx+UBEVnYUI8W8Wo8Tud++bibYYjaAbET8TFxHjIllkIUiMqOgiLgQRIZt05t37kiGMEfGDoiYgQhQX8UP8x5Zbr3rmTc9Md73ucqPvQMFM9a1b91bdOqfqBUGBAgUKFChQoECBAgUKFCjw/4OKwxHNsNO0GNY6D2wGSzThlkqM1+WZb5DHBzXhjpV071mBT2jCXZqxaRrBtxKgyzgJJB0Hb+SZTzFMyLgyh9cEvjD88eiJmuCoItivGV6WCUpJbZXzjjD8qgjiPHNqhu1mHgpXBn7LCpuKcFOFw3vMCif4iHNQhF8oxoM9VMBfI42R43sKehGnGyX4Sow3lpLauZrwb8XwtvN4hoYi/D1oTix1HaMIP1WE3/Qc9IJOGUkz/LZi7+gp9v8PNcORYOfocS7jNcNrshADDTzfeU6CnzTDvsAXlk/XT5XV1IS7M4FtNTuURFc5BcX4nNgPcnili31pun5GSir4VuAL5RhXW6Z6aiYwim5Pzww87uJDxeF6W5p3udiXktoqm8iWfmKfGwTBC4YGk+jaVt8gj5+uGP+UA+nio8xwh6XuDXkWr8LhY4EvaMZpqdcrpusnZPsV45Sh5Pc2nNTNh0rCy+2ubnac836zeAR3Bz4w0MAzhQIVwbvzgiPclNIw3NDNj4rHzskjitqypDcx1ARrFttioWJbxxsdrym/KMJJp3k5Fd3yZHRh4AOKcZut7cvafxto4Ml5FDuPKGrfYqgZPjHsxHhQMXw1rxH8IdR8ya7aab2IoqaxSxXjz2UO72yfV/kSw6HJ6nJRcLkgyoFfqCmCQ6YEYlzdNRHC18X2on3rzmv1KcKnbXnuaLP9UcjESyKKsWonqS8aXFy72pWNFhJFTfiRJYEjcjH9V8RQt26feyK9mI3UsCb4QXYnryhWEhyyi3A0TSa6RfrLBBfb5LZ6SSQtG/i6m51meEcTHBveu+5sJ1EkeNj4Z3zGJEb4kL0lvOJdDDWNlbLOO0ExPGoDXOMkiozPz5ZVWlKa8ID8LeKqfYphheE+Gxx0sxXmscy2zVUUzTM2c8g1wRPGRxzepgme9SaGivFN43iqusJR7L4TyuxqZ3QHJ2fLCm6eUwGMr/oTw3TCw4rxc9ch6UcJYaTxCzraEX4pmpQtq8xvBwztEsRexHCGNQhedE6E4AG7otWOdgwNIYaFzl+rvDTBMS9iKG/xdKJo1HXMUBxWbP1vdxHFbFnN/paWl0799P8yFDpUjN93o9N5QTK8rwhe6mSjGB60u3EoW1YZH42+H1Ty3pBvUOZ9keMjQRYSnPiQC6UJfKq6TJR6TjJT1WXtb5sZNCeWytMh2yWPuPa+jtAJ3mopcH3QI+QVacvjSRM0wQf91rsm3C3qnzsR4Xm5X/XWYHN7IsJOvfvDuiL4LF8iHF0/e9j6bK1rSEqlHnzCYfc9bAZLFEU3CVv10+RO1Toj8rmzX39KWjw27J7IfwD/AOcJkejWPSUhAAAAAElFTkSuQmCC" alt="monospaced-font">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Split</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Indica la operación de tokenizar el texto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm position-relative mb-4 mx-auto">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,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" alt="spellcheck">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Especial</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Operación de eliminar los caracteres especiales del texto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm position-relative mb-4 mx-auto">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLUlEQVR4nO2Yz0tUURTHr1lRadEii6AwnXtnQspNhUuzfyAIZ1G+OWcskHZBtCmLMIX+gv6BFkHSpmyRtJicc54K+aNFtYhAiiBaGOoUEpUT9819ajbPeTbDvFe8L9zNu+e+ez+cc+499woRKVKkSJEiRfJWs23tlQQDkmBaMn5RjPkgmtRzE05Jxn69JrERSUonJcFCUItXXlAEC9KGTt8QinCpMBgexQhPtg5bdSIgtQ5bdTGGDsU45KyJcKkkjAmngicIroqQSTH2Gph5me1u8DTUOeF6QoRUyvUMwy1PI8nwQhvpcBIhVdxOnzJemfI0kow5bdSSSdaLkCrB53e6ie9p5O4OIuRSpdZZLkhsJH1QMX6WBDOeRoPJWklwSTFMOknLmCuENFxrzOC24EEGk7WK8Zlxe3GQ/M1NivCh2RV/SsLnisBWDIvm8Bs/MJrcHijI8ta4DohksEz/bIJTx93vTWMX9mkI5fThjcBAVNZqk4zfJUFWMbz3AlGET/T/45y6vLYvMZo+akBeBwIix7t2KcK3imAuMYaHNISnRwhmCiEEsaLzE37SYRYIiGK4a+K7y12st0fggSIcFnlRU6wUkYTfJOGHqoNISp8zEPdWvnmD+MyxO1UFiY9YTTqcFOO7xgzuLgckxqnTJsdm162hKg3Snmnf7GybegvNptpX920E5NhEzxZdM+n/6PNHZa02P+MqBqII+kzhdnttn1+QZts6ouslt26K23jYD0RlQRh/mK1yRDI+Xd30rlO4UcKgbsXGS8aLxk6H00DLy+RWvxCVBvF9q/tjLMEV481XcTt9otRcgdRahX/Aouc5YkOn68n9Ez07/n4ODBAkL2oUwxtF8DWeObunvDkwOBAnuQtnTm5tXv2eY3g/1CD6rPCXV/AxFCDVkCq1TvcFJcxXXamLVPOS4m1EMO08PjB0iH/88aHfuG1IhFSS4LG5Yfb5e6Bj7BUhkyK4biDmSm7hzqG1/GSKQ9qVQeZMSyZZr9ew4glcUpQ+42uwgZnfSClSlUYw5xtiGSbb3eCU2AyT7sNdEE06c+unI+grtyKIFClSpEiR/nv9AhSi75fTfNjuAAAAAElFTkSuQmCC" alt="42">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Number</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Operación de extraer los números del texto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card shadow-none text-center py-3">
+                                <div class="card-body py-4">
+                                    <div class="avatar-sm position-relative mb-4 mx-auto">
+                                        <div class="job-icon-effect"></div>
+                                        <div class="avatar-title bg-transparent text-success rounded-circle">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR4nO3ZO07DQBAG4JFpoOEESEHyTjgDiIo7pEKZSccxfAHCQSiRqClmzKugAxFuQEWLEGjRGqcgMuIhhHfQfJKbJEVs/zvaXwvwTWunoxUUvkKlO4hVAVYF4SkqxyB8Y/ZGSh1vovIzCr0MZbwNFg1OeBmVrpu3obQPVqHwwVuk6DatE7CotBApFKqD0GU4313t+j49/aA8axf4FHKFzShtInMMh6OlD6eU8uwrkUq/7eOCjTNeR+H7rif+k0j1diNJ+pOo9Nh8KLRnekqh8qSN2NOwnuyYnlKhXQ+o9JDilK6ynmyBObEqUOlonjtTkVqUxnAQvkgj2VyknHmxKsxu4ee8WOWktLAL/ozZLcsi01sWU5FCL1bdvFipF6v3vFhlKXqxcs79S9Grbj6CnyFmYuBVNyOlV90/hH6G2M3PEH8L+hlijqJXXejbK4JWWNiwISrQAAAAAElFTkSuQmCC" alt="to-do">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="stretched-link">
+                                        <h5 class="fs-17 pt-1">Fin</h5>
+                                    </a>
+                                    <p class="mb-0 text-muted">Refleja la conclusión de la función</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end services -->
+
+            <!-- start cta -->
+            <section class="py-5 bg-primary position-relative">
+                <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
+                <div class="container">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-sm">
+                            <div>
+                                <h4 class="text-white mb-2">¿Estas Interesado?</h4>
+                                <p class="text-white-50 mb-0">¡No pierdas la oportunidad, da el siguiente paso ahora!</p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-sm-auto">
+                            <div>
+                                <a href="home/views/view-editor.html" class="btn bg-gradient btn-danger">¡Pruebalo Ahora!</a>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end cta -->
+
+            <!-- <section class="section" id="findJob">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="text-center mb-5">
+                                <h1 class="mb-3 fw-semibold text-capitalize lh-base">Find Your <span class="text-primary">Career</span> You Deserve it</h1>
+                                <p class="text-muted">Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                  
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-warning-subtle rounded">
+                                                <img src="assets/images/companies/img-3.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>UI/UX designer</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Nesta Technologies
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> USA
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $23k - 35k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-success-subtle text-success">Design</span>
+                                                <span class="badge bg-danger-subtle text-danger">UI/UX</span>
+                                                <span class="badge bg-primary-subtle text-primary">Adobe XD</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-primary-subtle rounded">
+                                                <img src="assets/images/companies/img-2.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Product Sales Specialist</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Digitech Galaxy
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> Spain
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $10k - 15k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-primary-subtle text-primary">Sales</span>
+                                                <span class="badge bg-secondary-subtle text-secondary">Product</span>
+                                                <span class="badge bg-info-subtle text-info">Business</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle active" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-danger-subtle rounded">
+                                                <img src="assets/images/companies/img-4.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Marketing Director</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Meta4Systems
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> Sweden
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $20k - 25k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-warning-subtle text-warning">Marketing</span>
+                                                <span class="badge bg-info-subtle text-info">Bussiness</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle active" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-success-subtle rounded">
+                                                <img src="assets/images/companies/img-9.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Product Designer</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Themesbrand
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> USA
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $40k+
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-success-subtle text-success">Design</span>
+                                                <span class="badge bg-danger-subtle text-danger">UI/UX</span>
+                                                <span class="badge bg-primary-subtle text-primary">Adobe XD</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-info-subtle rounded">
+                                                <img src="assets/images/companies/img-1.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Project Manager</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Syntyce Solutions
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> Germany
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $18k - 26k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-danger-subtle text-danger">HR</span>
+                                                <span class="badge bg-success-subtle text-success">Manager</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-success-subtle rounded">
+                                                <img src="assets/images/companies/img-7.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Business Associate</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Nesta Technologies
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> USA
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $23k - 35k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-success-subtle text-success">Design</span>
+                                                <span class="badge bg-danger-subtle text-danger">UI/UX</span>
+                                                <span class="badge bg-primary-subtle text-primary">Adobe XD</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle active" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-info-subtle rounded">
+                                                <img src="assets/images/companies/img-8.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Recruiting Coordinator</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Zoetic Fashion
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> Namibia
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $12k - 15k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-success-subtle text-success">Full Time</span>
+                                                <span class="badge bg-info-subtle text-info">Remote</span>
+                                                <span class="badge bg-primary-subtle text-primary">Fashion</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle active" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-warning-subtle rounded">
+                                                <img src="assets/images/companies/img-5.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <div class="ms-3 flex-grow-1">
+                                            <a href="#!">
+                                                <h5>Customs officer</h5>
+                                            </a>
+                                            <ul class="list-inline text-muted mb-3">
+                                                <li class="list-inline-item">
+                                                    <i class="ri-building-line align-bottom me-1"></i> Nesta Technologies
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-map-pin-2-line align-bottom me-1"></i> USA
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="ri-money-dollar-circle-line align-bottom me-1"></i> $41k - 45k
+                                                </li>
+                                            </ul>
+                                            <div class="hstack gap-2">
+                                                <span class="badge bg-success-subtle text-success">Design</span>
+                                                <span class="badge bg-danger-subtle text-danger">UI/UX</span>
+                                                <span class="badge bg-primary-subtle text-primary">Adobe XD</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-ghost-primary btn-icon custom-toggle" data-bs-toggle="button">
+                                                <span class="icon-on"><i class="ri-bookmark-line"></i></span>
+                                                <span class="icon-off"><i class="ri-bookmark-fill"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="text-center mt-4">
+                                <a href="#!" class="btn btn-ghost-primary">View More Jobs <i class="ri-arrow-right-line align-bottom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- start find jobs -->
+           <!--  <section class="section">
+                <div class="container">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <div class="text-muted mt-5 mt-lg-0">
+                                <h5 class="fs-12 text-uppercase text-success">Hot Featured Company</h5>
+                                <h1 class="mb-3 fw-semibold text-capitalize lh-base">Get <span class="text-primary">10,000+</span> Featured Companies</h1>
+                                <p class="ff-secondary mb-2">The demand for content writing services is growing. This is because content is required in almost every industry. <b>Many companies have discovered how effective content marketing is.</b> This is a major reason for this increase in demand.</p>
+                                <p class="mb-4 ff-secondary">A Content Writer is a professional who writes informative and engaging articles to help brands showcase their products.</p>
+
+                                <div class="mt-4">
+                                    <a href="index.html" class="btn btn-primary">View More Companies <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-7 col-10 ms-lg-auto mx-auto order-1 order-lg-2">
+                            <div>
+                                <div class="card shadow-lg">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-icon btn-soft-primary float-end" data-bs-toggle="button" aria-pressed="true"><i class="mdi mdi-cards-heart fs-16"></i></button>
+                                        <div class="avatar-sm mb-4">
+                                            <div class="avatar-title bg-secondary-subtle rounded">
+                                                <img src="assets/images/companies/img-1.png" alt="" class="avatar-xxs">
+                                            </div>
+                                        </div>
+                                        <a href="#!">
+                                            <h5>New Web designer</h5>
+                                        </a>
+                                        <p class="text-muted">Themesbrand</p>
+
+                                        <div class="d-flex gap-4 mb-3">
+                                            <div>
+                                                <i class="ri-map-pin-2-line text-primary me-1 align-bottom"></i> Escondido,California
+                                            </div>
+
+                                            <div>
+                                                <i class="ri-time-line text-primary me-1 align-bottom"></i> 3 min ago
+                                            </div>
+                                        </div>
+
+                                        <p class="text-muted">As a Product Designer, you will work within a Product Delivery Team fused with UX, engineering, product and data talent.</p>
+
+                                        <div class="hstack gap-2">
+                                            <span class="badge bg-success-subtle text-success">Full Time</span>
+                                            <span class="badge bg-primary-subtle text-primary">Freelance</span>
+                                            <span class="badge bg-danger-subtle text-danger">Urgent</span>
+                                        </div>
+
+                                        <div class="mt-4 hstack gap-2">
+                                            <a href="#!" class="btn btn-soft-primary w-100">Apply Job</a>
+                                            <a href="#!" class="btn btn-soft-success w-100">Overview</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card shadow-lg bg-info mb-0 features-company-widgets rounded-3">
+                                    <div class="card-body">
+                                        <h5 class="text-white fs-16 mb-4">10,000+ Featured Companies</h5>
+
+                                        <div class="d-flex gap-1">
+                                            <a href="javascript: void(0);" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Brent Gonzalez">
+                                                <div class="avatar-xs">
+                                                    <div class="avatar-title bg-light bg-opacity-25 rounded-circle">
+                                                        <img src="assets/images/companies/img-5.png" alt="" height="15">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript: void(0);" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Brent Gonzalez">
+                                                <div class="avatar-xs">
+                                                    <div class="avatar-title bg-light bg-opacity-25 rounded-circle">
+                                                        <img src="assets/images/companies/img-2.png" alt="" height="15">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript: void(0);" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Brent Gonzalez">
+                                                <div class="avatar-xs">
+                                                    <div class="avatar-title bg-light bg-opacity-25 rounded-circle">
+                                                        <img src="assets/images/companies/img-8.png" alt="" height="15">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript: void(0);" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Brent Gonzalez">
+                                                <div class="avatar-xs">
+                                                    <div class="avatar-title bg-light bg-opacity-25 rounded-circle">
+                                                        <img src="assets/images/companies/img-7.png" alt="" height="15">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript: void(0);" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="More Companies">
+                                                <div class="avatar-xs">
+                                                    <div class="avatar-title fs-11 rounded-circle bg-light bg-opacity-25 text-white">
+                                                        1k+
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </section> -->
+            
+
+           
+            <section class="section bg-light" id="Creadores">
+                <div class="bg-overlay bg-overlay-pattern"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center mb-5">
+                                <h1 class="mb-3 fw-semibold text-capitalize lh-base">Creadores de <span class="text-primary">LOOT</span></h1>
+                                <p class="text-muted mb-4">¿Te has preguntado quiénes están detrás de LOOT, el innovador lenguaje de programación que está cambiando las reglas del juego? Descubre las mentes creativas que dieron vida a este proyecto, 
+                                    su pasión por la tecnología, y cómo transformaron una idea en una herramienta poderosa.</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="swiper candidate-swiper">
+                                 <style>
+                                    .swiper-wrapper{
+                                        position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            z-index: 1;
+                                            display: flex
+                                        ;
+                                            transition-property: transform;
+                                    }
+                                    @media(min-width: 992px){
+                                        .swiper-wrapper{
+                                            position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            z-index: 1;
+                                            display: flex;
+                                            transition-property: transform;
+                                            transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+                                            box-sizing: content-box;
+                                            flex-wrap: nowrap;
+                                            align-content: center;
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-direction: row-reverse;
+    
+                                        }
+                                    }
+                                </style>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card text-center">
+                                            <div class="card-body p-4">
+                                                <img src="assets/images/CAR.jpg" alt="" class="rounded-circle avatar-md mx-auto d-block">
+                                                <h5 class="fs-17 mt-3 mb-2">Carlos Daniel Quintal Pech</h5>
+                                                <p class="text-muted fs-13 mb-3">Desarrollador y Analisista De Datos</p>
+
+                                                <p class="text-muted mb-4 fs-14">
+                                                    <i class="ri-map-pin-2-line text-primary me-1 align-bottom"></i> Dzitbalché, Campeche
+                                                </p>
+
+                                                <a class="btn btn-primary w-100">Creador</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card text-center">
+                                            <div class="card-body p-4">
+                                                <img src="assets/images/WhatsApp Image 2024-11-17 at 3.35.30 AM.jpeg" alt="" class="rounded-circle avatar-md mx-auto d-block">
+                                                <h5 class="fs-17 mt-3 mb-2">Alan Antony Puc Yam</h5>
+                                                <p class="text-muted fs-13 mb-3">Desarrollador Full Stack Web e Inteligencia Artificial</p>
+                                        
+                                                <p class="text-muted mb-4 fs-14">
+                                                    <i class="ri-map-pin-2-line text-primary me-1 align-bottom"></i> Calkiní, Campeche
+                                                </p>
+                                        
+                                                <a class="btn btn-primary w-100">Creador</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <!-- <div class="col-xl-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
+                                                <h6 class="card-title mb-0">Employee Card</h6>
+                                            </div>
+                                            <div class="card-body p-4 text-center">
+                                                <div class="mx-auto avatar-md mb-3">
+                                                    <img src="assets/images/users/avatar-8.jpg" alt="" class="img-fluid rounded-circle">
+                                                </div>
+                                                <h5 class="card-title mb-1">Gabriel Palmer</h5>
+                                                <p class="text-muted mb-0">Graphic Designer</p>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-secondary"><i class="ri-facebook-fill"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-success"><i class="ri-whatsapp-line"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-primary"><i class="ri-linkedin-fill"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-danger"><i class="ri-slack-fill"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
+                                                <h6 class="card-title mb-0">Employee Card</h6>
+                                            </div>
+                                            <div class="card-body p-4 text-center">
+                                                <div class="mx-auto avatar-md mb-3">
+                                                    <img src="assets/images/users/avatar-5.jpg" alt="" class="img-fluid rounded-circle">
+                                                </div>
+                                                <h5 class="card-title mb-1">Amelie Townsend</h5>
+                                                <p class="text-muted mb-0">Project Manager</p>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-secondary"><i class="ri-facebook-fill"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-success"><i class="ri-whatsapp-line"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-primary"><i class="ri-linkedin-fill"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="javascript:void(0);" class="lh-1 align-middle link-danger"><i class="ri-slack-fill"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end candidates -->
+
+            <!-- start blog -->
+            <section class="section" id="blog">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center mb-5">
+                                <h1 class="mb-3 fw-semibold text-capitalize lh-base">Conoce Las Novedades <span class="text-primary">De LOOT</span></h1>
+                                <p class="text-muted mb-4">Descubre las últimas noticias, avances y la historia detrás de LOOT, el lenguaje diseñado para revolucionar el procesamiento de texto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/1607546217957.jpg" alt="" class="img-fluid rounded" />
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-inline fs-14 text-muted">
+                                        <li class="list-inline-item">
+                                            <i class="ri-calendar-line align-bottom me-1"></i> 5 Febrero, 2024
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="ri-message-2-line align-bottom me-1"></i> 364 Comment
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:void(0);">
+                                        <h5>Desarrollando Ideas</h5>
+                                    </a>
+                                    <p class="text-muted fs-14">
+                                        El 5 de febrero de 2024 marcó el inicio de un emocionante viaje: el desarrollo de las ideas que darían vida a LOOT. Desde ese momento, 
+                                        cada concepto se enfocó en simplificar y optimizar el procesamiento de texto.</p>
+                                    
+                                    <div>
+                                      <!--   <a href="#!" class="link-success">Learn More <i class="ri-arrow-right-line align-bottom ms-1"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/support.png" alt="" class="img-fluid rounded" />
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-inline fs-14 text-muted">
+                                        <li class="list-inline-item">
+                                            <i class="ri-calendar-line align-bottom me-1"></i> 10 Mayo, 2024
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="ri-message-2-line align-bottom me-1"></i> 245 Comment
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:void(0);">
+                                        <h5>Primer Vistazo: Aplicación de Escritorio</h5>
+                                    </a>
+                                    <p class="text-muted fs-14">Se desarrolló una aplicación de escritorio utilizando Python, con una interfaz moderna y amigable. 
+                                       Basado en un lenguaje propio de autómatas, permite una experiencia eficiente y fluida en la ejecución de operaciones.
+
+
+                                    </p>
+                        
+                                    <div>
+                                       <!--  <a href="#!" class="link-success">Learn More <i class="ri-arrow-right-line align-bottom ms-1"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="assets/images/SW.png" alt="" class="img-fluid rounded" />
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-inline fs-14 text-muted">
+                                        <li class="list-inline-item">
+                                            <i class="ri-calendar-line align-bottom me-1"></i> 18 Noviembre, 2024
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="ri-message-2-line align-bottom me-1"></i> 354 Comment
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:void(0);">
+                                        <h5>Editor Online: Programación en LOOT desde tu Navegador</h5>
+                                    </a>
+                                    <p class="text-muted fs-14">Se está desarrollando un editor en línea que permitirá escribir y 
+                                        ejecutar código en LOOT directamente desde una página web. Este editor contará con herramientas intuitivas y funcionales para facilitar la programación</p>
+                        
+                                    <div>
+                                        <!-- <a href="#!" class="link-success">Learn More <i class="ri-arrow-right-line align-bottom ms-1"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+     
+            </section> 
+            <!-- end blog -->
+
+            <!-- start cta -->
+            <!-- <section class="py-5 bg-primary position-relative">
+                <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
+                <div class="container">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-sm">
+                            <div>
+                                <h4 class="text-white fw-semibold">Get New Jobs Notification!</h4>
+                                <p class="text-white text-opacity-75 mb-0">Subscribe & get all related jobs notification.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-auto">
+                            <button class="btn btn-danger" type="button">Subscribe Now <i class="ri-arrow-right-line align-bottom"></i></button>
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+                
+            </section> -->
+           
+
+            <!-- Start footer -->
+            <footer class="custom-footer bg-dark py-4 position-relative">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div>
+                            <img src="assets/images/logo1dark.png" alt="logo light" height="85">
+                        </div>
+                        <div class="col-sm-6">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © LOOT.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Todos Los Derechos Reservados.
+                            </div>
+                            <p class="mb-0"><a target="_blank" href="https://iconos8.es/" class="text-sm-end d-none d-sm-block" style="display:flex; justify-content:flex-end ;color:#98a6ad">Icons by Icons8</a></p>
+                            <p class="mb-0"><a target="_blank" href="https://lordicon.com/" class="text-sm-end d-none d-sm-block" style="display:flex; justify-content:flex-end ;color:#98a6ad">Icons by Lordicon.com</a></p>
+                        </div>
+                        <div class="text-sm-start mt3 mt-sm-0">
+                            <ul class="list-inline mb-0 footer-social-link">
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="avatar-xs d-block">
+                                        <div class="avatar-title rounded-circle">
+                                            <i class="ri-facebook-fill"></i>
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="avatar-xs d-block">
+                                        <div class="avatar-title rounded-circle">
+                                            <i class="ri-instagram-fill"></i>
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="avatar-xs d-block">
+                                        <div class="avatar-title rounded-circle">
+                                            <i class="ri-tiktok-fill"></i>
+                                        </div>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+
+            <!--start back-to-top-->
+            <button onclick="topFunction()" class="btn btn-info btn-icon landing-back-top" id="back-to-top">
+                <i class="ri-arrow-up-line"></i>
+            </button>
+            <!--end back-to-top-->
+
+        </div>
+        <!-- end layout wrapper -->
+
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+        <script src="assets/js/plugins.js"></script>
+
+        <!--Swiper slider js-->
+        <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+        <!--job landing init -->
+        <script src="assets/js/pages/job-lading.init.js"></script>
+        
+         <!-- Masonry plugin -->
+        <script src="assets/libs/masonry-layout/masonry.pkgd.min.js"></script>
+
+        <script src="assets/js/pages/card.init.js"></script>
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+    </body>
+
+</html>
