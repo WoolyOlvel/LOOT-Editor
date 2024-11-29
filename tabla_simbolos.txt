@@ -1,0 +1,32 @@
+Token                    Valor     Línea
+IDENTIFICADOR            txt       1
+VARIABLE                 palabra   1
+IGUALDAD                 =         1
+COMILLA                  "         1
+ERROR                    T         Error: Carácter "T" no válido en la línea 1, posición 15
+VARIABLE                 engo      1
+NUMERO                   25        1
+VARIABLE                 a         1
+ERROR                    ñ         Error: Carácter "ñ" no válido en la línea 1, posición 25
+VARIABLE                 os        1
+VARIABLE                 y         1
+VARIABLE                 mi        1
+VARIABLE                 hermana   1
+VARIABLE                 tiene     1
+NUMERO                   30        1
+COMILLA                  "         1
+FUNCION                  Funcion   2
+TIPO_DE_FUNCION          Number    2
+PARENTESIS_DE_ABERTURA   (         2
+VARIABLE                 palabra   2
+PARENTESIS_DE_CERRADURA  )         2
+DOS_PUNTOS               :         2
+PALABRA_RESERVADA        Retornar  3
+PARENTESIS_DE_ABERTURA   (         3
+VARIABLE                 palabra   3
+PARENTESIS_DE_CERRADURA  )         3
+FIN_DE_LA_FUNCION        Fin       4
+IMPRIMIR                 Imprimir  5
+PARENTESIS_DE_ABERTURA   (         5
+VARIABLE                 number    5
+PARENTESIS_DE_CERRADURA  )         5

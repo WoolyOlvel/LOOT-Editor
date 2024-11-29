@@ -1,0 +1,51 @@
+Código Intermedio
+
+
+#1: (=, "None", t1)
+#2: (=, #1, palabra)
+
+
+#1: (=, "None", t1)
+#2: (=, #1, texto)
+#3: (=, "None", t2)
+#4: (=, #3, text)
+#5: (print, (, _)
+#6: (+, texto, text, t3)
+#7: (print, t3, _)
+
+#1: (=, "None", t1)
+#2: (=, #1, palabras)
+#3: (Funcion, Dividir, _)
+#4: (print, (, _)
+#5: (Fin, Dividir, _)
+
+
+#1: (=, "None", t1)
+#2: (=, #1, palabra)
+#3: (Funcion, Delete, _)
+#4: (return, (, _)
+#5: (print, (, _)
+#6: (Fin, Delete, _)
+
+#1: (=, "None", t1)
+#2: (=, #1, palabra)
+#3: (Funcion, Split, _)
+#4: (return, (, _)
+#5: (Fin, Split, _)
+#6: (print, (, _)
+
+#1: (=, "None", t1)
+#2: (=, #1, palabra)
+#3: (Funcion, Especial, _)
+#4: (return, (, _)
+#5: (print, (, _)
+#6: (Fin, Especial, _)
+
+#1: (=, "None", t1)
+#2: (=, #1, palabra)
+#3: (Funcion, Number, _)
+#4: (return, (, _)
+#5: (print, (, _)
+#6: (Fin, Number, _)
+
+
