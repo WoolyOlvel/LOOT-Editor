@@ -1,0 +1,53 @@
+Código Intermedio (Código Optimizado):
+
+#Concatenacion
+
+#1: (+, palabra, palabras, t1)
+#2: (print, t1, _)
+
+#1: (+, "palabra", "palabras", t1)
+#2: (print, t1, _)
+
+#1: (+, palabra, palabras)
+#2: (print, t1, _)
+
+
+#Conteo De palabras en un texto
+
+#1: (Funcion, Dividir, _)
+#2: (Fin, Dividir, _)
+
+
+#1: (Funcion, Dividir, _)
+#2: (print, (, _))
+#2: (Fin, Dividir, _)
+
+
+#Eliminación de espacios en blanco.
+
+#1: (Funcion, Delete, _)
+#2: (return, (, _))
+#3: (print, (, _))
+#4: (Fin, Delete, _)
+
+#Tokenización de texto.
+
+#1: (Funcion, Split, _)
+#2: (return, (, _))
+#3: (print, (, _))
+#4: (Fin, Split, _)
+
+#Remoción de caracteres especiales
+
+#1: (Funcion, Especial, _)
+#2: (return, (, _)
+#3: (print, (, _)
+#4: (Fin, Especial, _)
+
+#Extracción de números.
+
+#1: (Funcion, Number, _)
+#2: (return, (, _)
+#3: (print, (, _)
+#4: (Fin, Number, _)
+

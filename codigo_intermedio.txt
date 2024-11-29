@@ -1,0 +1,7 @@
+Código Intermedio (Código de tres direcciones):
+
+#1: (=, "None", t1)
+#2: (=, #1, palabra)
+#3: (Funcion, (, _)
+#4: (return, palabra, _)
+#5: (print, Split, _)
